@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <div class="main">
+        <section class="sidebar">
+            <div class="allT">
+        
+            </div>
+            <button id="openFormBtn">+ Create new table</button>
+        </section>
+        <section class="table-content">
+            
+        </section>
+    </div>
+
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <span id="closeModal" class="close-btn">X</span>
+            <h2>Create Table</h2>
+            
+            <form id="tableForm">
+                <label for="table">Table Name</label>
+                <input placeholder="Table name" id="table">
+            
+                <div class="fields">
+                    <div class="field-row">
+                        <div>
+                            <label for="field">Field Name</label>
+                            <input placeholder="Field name" name="field[]">
+                        </div>
+                        <div>
+                            <label for="type">Type</label>
+                            <input placeholder="type" name="type[]">
+                        </div>
+                    </div>
+                </div>
+            
+                <button type="button" id="addFieldBtn">Add another field</button><br>
+                <button type="submit">Create Table</button>
+            </form>
+
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/addField.js"></script>
+    <script src="./js/api.js"></script>
+
+
+</body>
+
+</html>
